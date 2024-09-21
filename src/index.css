@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 body{
-  background: url(./assets/bg-img.webp);
+  background: url(./assets/520.webp);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -13,44 +13,3 @@ body{
   overflow-x: hidden;
   
 }
-/* *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Work Sans", sans-serif;
-  overflow-x: hidden; */
-  
-/* }
-body{
-  background: white;
-}
-a{
-  text-decoration: none;
-  color: inherit;
-  line-height: 1;
-  cursor: pointer;
-}
-.container{
-  padding-left: 5%;
-  padding-right: 5%;
-}
-.btn{
-  background: whitesmoke;
-  color: #262626;
-  padding: 14px 20px;
-  font-size: 16px;
-  border-radius: 30px;
-  cursor: pointer;
-  border: 0;
-  outline: 0;
-} */
-/* media query */
-/* @media (max-width: 1200px) {
-  .container{
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-  .btn{
-    padding: 14px 18px;
-  }
-} */

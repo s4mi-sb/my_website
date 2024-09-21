@@ -137,7 +137,7 @@ export default function Project() {
                
                <p>➤ Created a full stack web application to connect student riders with passengers seeking rides.</p>
                <p>➤ This website allows students to easily sign up, post rides, connect with riders, and effortlessly search for rides.</p>
-               <p>➤ Developed with <b>MERN, Tailwind CSS, Nodemailer, GoogleMaps API, AWS S3 Bucket, Redux</b>, and <b>JWT</b>.</p>
+               <p>➤ Developed with MERN, Tailwind CSS, Nodemailer, GoogleMaps API, AWS S3 Bucket, Redux, and JWT.</p>
                <div className='flex flex-row justify-between'>
                <a href='https://isucarpooling.onrender.com' target='_blank' rel="noopener noreferrer"><motion.button className='border rounded-full p-3 border-blue-600'
                       whileTap={{scale: 0.95}}

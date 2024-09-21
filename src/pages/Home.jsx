@@ -1,5 +1,5 @@
 import React from 'react'
-import {motion} from 'framer-motion'
+import {motion, useCycle} from 'framer-motion'
 import profile from '../assets/iowa-state-logo.png'
 import nodepic from '../assets/nodejs.png'
 import javapic from '../assets/java.png'
@@ -18,16 +18,17 @@ import spring from '../assets/spring-boot.png'
 import nodeMailer from '../assets/nodeMailer.png'
 
 export default function Home() {
+    const [x, cycleX] = useCycle(360, -360, 720, -720)
   return (
     <section>
     <div className='flex flex-col h-screen justify-center'>
       <div className='pt-32 max-w-4xl mx-auto text-white flex flex-col md:flex-row justify-center gap-10 items-center'>
-          <div className='flex flex-col gap-3 text-white border border-white p-3 "delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:invisible" data-taos-offset="400" text-xl lg:text-4xl rounded-lg'>
+          <div className='flex flex-col gap-3 text-white border border-white p-3 "delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:invisible" data-taos-offset="400" text-lg lg:text-xl rounded-lg'>
               <p className=''> Hello!👋</p>
               <h1>I'm Samuel Barnabase</h1>
-              <p><span>Computer Engineering Student</span></p>
+              <p className=''><span>Electrical Engineering Student</span></p>
           </div>
-          <motion.img src={profile} alt="" className='size-44 object-contain' animate={{ rotate: 360 }}
+          <motion.img src={profile} alt="" className='size-44 object-contain' onTap={() => cycleX()} animate={{ rotate: x }}
             transition={{ duration: 2 }}/>
           
       </div>
@@ -72,7 +73,7 @@ export default function Home() {
                         </li>
                         <li className='flex flex-col items-center'>
                             <img className='size-16 object-contain' src={reactpic} alt="reactpic" />
-                            <p className='text-white'>ReactJS</p>
+                            <p className='text-white'>React</p>
                         </li>
                         <li className='flex flex-col items-center'>
                             <img className='size-16 object-contain' src={awspic} alt="awspic" />

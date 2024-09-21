@@ -2,7 +2,6 @@ import {useEffect, useRef} from 'react'
 import profile from '../assets/aboutImg.jpg'
 import { motion,useInView,useAnimation} from "framer-motion"
 import {Popover} from 'flowbite-react';
-import Tigrai from '../assets/Tigai-Map.jpg'
 
 export default function AboutMe() {
 
@@ -21,7 +20,7 @@ export default function AboutMe() {
   })
   return (
     <div className='pt-32 min-h-screen'>
-      <motion.div className='max-w-5xl mx-auto border rounded-lg p-7'  style={{background:'rgba(241, 241, 245, 0.1)'}} ref={imgRef}
+      <motion.div className='max-w-5xl mx-auto border border-green-400 rounded-lg p-7'  style={{background:'rgba(241, 241, 245, 0.1)'}} ref={imgRef}
       
       animate = {modify}
       initial = 'hidden'
@@ -32,12 +31,12 @@ export default function AboutMe() {
       transition={{ delay: 0.1 }}
 
       >
-        <motion.h1 className='text-3xl text-green-300 text-center font-extrabold underline underline-offset-8 mb-7'>About Me</motion.h1>
+        <motion.h1 className='text-3xl text-green-400 text-center font-extrabold underline underline-offset-8 mb-7'>About Me</motion.h1>
 
             <div>
                 <p className='sm:text-center mb-7 text-white'>
                 Hi, there! I'm Samuel Barnabase, currently a sophmore studying  
-                Computer Engineering at <motion.span whileHover={{fontWeight: "bold"}}> <a className='text-blue-200' href="https://www.iastate.edu/" target="_blank" rel="noopener noreferrer">Iowa State University</a></motion.span>.
+                Electrical Engineering at 🟨 <motion.span whileHover={{fontWeight: "bold"}}> <a className='text-red-400' href="https://www.iastate.edu/" target="_blank" rel="noopener noreferrer">Iowa State University</a></motion.span> 🟥 with a minor in Computer Science.
                 </p>
             </div>
         
@@ -69,62 +68,26 @@ export default function AboutMe() {
             >
                 <h1 className='text-center text-green-300 mb-4 font-semibold underline underline-offset-8'>Background</h1>
                 <div className='relative'>
-                    <p className='leading-8 sm:bg-white sm:p-2 sm:text-black rounded-md'>
+                    <p className='leading-8 sm:p-2 rounded-md'>
                       I was born and raised in {" "} 
-                      <Popover
-                        trigger='hover'
-                        content = {
-                          <div className="w-96 text-sm text-gray-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400">
-                          <div className="grid grid-cols-5">
-                            <div className="col-span-3 p-3">
-                              <div className="space-y-2">
-                                <h3 className="font-semibold text-gray-900 dark:text-white">About Tigray</h3>
-                                <p>
-                                  Tigray is located in the northern region of the Horn of Africa. It is renowned for its ancient history, dating back thousands of years.
-                                  The region boasts a rich cultural heritage, with distinctive traditions and languages that have evolved over centuries. 
-                                  
-                                </p>
-                                <a
-                                  href="https://www.google.com/search?q=Mekelle,Tigray" target='_blank' rel="noopener noreferrer"
-                                  className="flex items-center font-medium text-blue-600 hover:text-blue-700 hover:underline dark:text-blue-500 dark:hover:text-blue-600"
-                                >
-                                  Learn more{' '}
-                                  <svg
-                                    className="ms-1.5 h-2 w-2 rtl:rotate-180"
-                                    aria-hidden="true"
-                                    xmlns="https://www.google.com/search?q=Mekelle,Tigray"
-                                    fill="none"
-                                    viewBox="0 0 6 10"
-                                  >
-                                    <path
-                                      stroke="currentColor"
-                                      strokeLinecap="round"
-                                      strokeLinejoin="round"
-                                      strokeWidth="2"
-                                      d="m1 9 4-4-4-4"
-                                    />
-                                  </svg>
-                                </a>
-                              </div>
-                            </div>
-                            <img
-                              src={Tigrai}
-                              className="col-span-2 h-full object-contain"
-                              alt="Tigrai map"
-                            />
+                    <Popover content = {<div className="w-64 text-sm text-gray-500 dark:text-gray-400">
+                          <div className="border-b border-gray-200 px-3 py-2 dark:border-gray-600 dark:bg-gray-700">
+                            <h3 className="font-semibold text-gray-900 dark:text-white">About Tigrai</h3>
                           </div>
-                        </div>
-                        }
-                      >
-                      <a className='text-blue-200 underline hover:no-underline sm:text-blue-700'> 
-                        Mekelle, Tigray
-                      </a>
-                      </Popover>
-                      , where my curiosity and passion for computers first emerged. Growing up there,
-                      I developed a great interest in technology and innovation. Throughout my high school years,
-                       I was involved in different coursework and projects that fueled my interest in computers, maths, and technology. 
+                          <div className="px-3 py-2">
+                            <p className='text-black'>Tigrai is located in the northern region of the Horn of Africa. It is renowned for its beautiful landscape 
+                                and ancient history, dating back thousands of years. The region boasts a rich cultural heritage, with distinctive 
+                                traditions and languages that have evolved over centuries.</p>
+                          </div>
+                        </div>}
+                    trigger="hover">
+                      <a className='underline underline-offset-4 text-blue-400'>Tigrai</a>
+                    </Popover>
+                      , where my curiosity and passion for technology first emerged. Growing up there,
+                      I developed a great interest in electronics, constantly messing around with old devices and trying to understand the mechanics behind them. Throughout my high school years,
+                       I was involved in different coursework and projects that fueled my interest in computers and maths. 
                        This fascination drove me to constantly explore new opportunities and stay updated with new tech trends. 
-                      To explore my dream even further, I decided to attend Iowa State University to study Computer Engineering. 
+                      To explore my dream even further, I decided to attend Iowa State University to study Electrical Engineering. 
                       I chose Iowa State because it offers great hands-on experience and several research opportunities. Upon graduating, 
                       I look forward to embarking on my journey in the tech world and using my skills and knowledge to create new solutions 
                       and make a positive impact in people's lives.
@@ -136,4 +99,3 @@ export default function AboutMe() {
     </div>
   )
 }
-// "https://www.google.com/search?q=Mekelle,Tigray"
