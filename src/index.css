@@ -4,6 +4,7 @@
 @tailwind utilities;
 body{
   background: url(./assets/520.webp);
+  background-color: black;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
