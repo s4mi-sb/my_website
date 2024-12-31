@@ -12,6 +12,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import timeDisplay from '../assets/time:temp.jpeg';
 
 export default function Project() {
   SwiperCore.use([Navigation]);
@@ -159,6 +160,35 @@ export default function Project() {
                </div>
                
             </Box>
+            
+            </SwiperSlide>
+
+            <SwiperSlide >
+            <Box 
+            className='rounded-lg max-w-xl mx-auto bg-cyan-50 shadow-md flex flex-col flex-wrap' 
+            height={450}
+            // width={350}
+            my={4}
+            gap={2}
+            p={2}
+            sx={{ border: '2px solid grey' }}>
+              <div className='flex flex-row flex-wrap justify-between max-w-full items-center'>
+                <h2 className='font-bold underline underline-offset-8'>Time and Temperature Display System</h2>
+                
+              </div>
+              <div className='flex sm:flex-row flex-col gap-3 justify-between'>
+                <img className='sm:size-64 size-56 h-full object-cover object-center rounded-xl' src={timeDisplay} alt="" />
+                <div className='flex flex-col text-xs sm:text-base'>
+                  <p>➤ Implemented an embedded system to display real-time temperature and time using an Atmega microcontroller.</p>
+                  <p>➤ Integrated a temperature sensor and op-amp for accurate room temperature detection.</p>
+                  <p>➤ Introduced an RTC module with a lithium backup battery to ensure the system retains accurate time even without external power.</p>
+                </div>
+               </div>
+               <div className='text-xs sm:text-base '>
+                <p className='italic'>Embedded Systems, Atmega Microcontroller, PCB Design, RTC Module</p>
+               </div>
+            </Box>
+            
             </SwiperSlide>
 
 
