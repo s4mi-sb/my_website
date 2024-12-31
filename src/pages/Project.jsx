@@ -1,4 +1,4 @@
-import {useEffect, useRef} from 'react'
+import {useEffect, useRef, useState} from 'react'
 import { motion,useInView,useAnimation} from "framer-motion"
 import Box from '@mui/material/Box';
 import {  } from 'react-icons/fa';
@@ -12,14 +12,15 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import timeDisplay from '../assets/time:temp.jpeg';
+import timeDisplay from '../assets/time.jpeg';
+
+
 
 export default function Project() {
   SwiperCore.use([Navigation]);
   const imgRef = useRef(null);
   const isimgView = useInView(imgRef);
   const modify = useAnimation();
-
   useEffect(()=>{
     if(isimgView){
       modify.start('visible');
@@ -177,6 +178,7 @@ export default function Project() {
                 
               </div>
               <div className='flex sm:flex-row flex-col gap-3 justify-between'>
+
                 <img className='sm:size-64 size-56 h-full object-cover object-center rounded-xl' src={timeDisplay} alt="" />
                 <div className='flex flex-col text-xs sm:text-base'>
                   <p>➤ Implemented an embedded system to display real-time temperature and time using an Atmega microcontroller.</p>
