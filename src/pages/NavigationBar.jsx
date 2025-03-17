@@ -66,8 +66,14 @@ export default function NavigationBar() {
                       
                       <motion.p whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.95 }} >Projects</motion.p>
                       
-                      </Link>
-                      {}
+                    </Link>
+                    
+                    <Link to='/resume' className={`${isOpen ? 'border border-white' : 'hidden text-white'} sm:inline-flex text-white p-3 text-center rounded-md ${action==='Resume' ? 'border' : ''} cursor-pointer`} 
+                    onClick={()=>{setOpen(false); setAction('Resume')}} >
+                      
+                      <motion.p whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.95 }} >Resume</motion.p>
+                      
+                    </Link>
                     
                     <div className={`flex flex-row gap-10 justify-center`}>
                       <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.95 }} ><a href="https://github.com/s4mi-sb" target="_blank" rel="noopener noreferrer"><FaGithub size={28} color='white' className={`${isOpen ? '' : 'hidden'} animate-pulse cursor-pointer sm:inline-flex`}/></a></motion.div>

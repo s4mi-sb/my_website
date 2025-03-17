@@ -1,5 +1,6 @@
 import profile from '../assets/innovate_120.jpeg'
 import arconicProfile from '../assets/arconic.jpg'
+import ARA_logo from '../assets/ARA_logo.png'
 import {useEffect, useRef} from 'react'
 import { motion,useInView,useAnimation} from "framer-motion"
 
@@ -75,7 +76,109 @@ export default function Experiences() {
                   {delay: 0.5}}
                 
                 >➤ Incoming Summer 2025 Electrical Engineering Intern.</motion.li>
-        </motion.ul>    
+        </motion.ul>
+                
+                
+        {/* Undergrad Research */}
+                <div className='flex flex-row justify-between bg-slate-400 p-2 rounded-md items-center mb-5'>
+            <div>
+                <h1 className='font-semibold text-xl'>Undergraduate Research Assistant</h1>
+                <p>January 2025 - Present</p>
+                <motion.p
+                className='IsuresearchHeading'>
+                  
+                    <motion.a whileHover={{fontWeight: 'bold'}} href="https://arawireless.org/" target="_blank" rel="noopener noreferrer">Iowa State University</motion.a>
+                </motion.p>
+                
+            </div>
+
+            <div>
+                <img className='h-full object-cover size-20 border-slate-400 rounded-lg' src={ARA_logo} alt="" />
+            </div>
+        </div>
+        <motion.ul 
+          animate = {modify}
+          initial = "hidden"
+          variants={
+            {
+              hidden: {opacity: 0, y: -100},
+              visible: {opacity: 1, y: 0},
+            }
+          }
+          transition={
+            {delay: 0.3}}
+        
+        className='gap-2 flex flex-col p-2 text-white'>
+                <motion.li 
+                animate = {modify}
+                initial = "hidden"
+                variants={
+                  {
+                    hidden: {opacity: 0, y: 100},
+                    visible: {opacity: 1, y: 0},
+                  }
+                }
+                transition={
+                  {delay: 0.6}}
+                
+                >➤ Set up a new monitoring system to track device performance and health using Linux in the <motion.a whileHover={{fontWeight: 'bold'}} href="https://arawireless.org/" target="_blank" className='font-bold text-blue-400' rel="noopener noreferrer">ARA</motion.a> wireless lab.</motion.li>
+        </motion.ul> 
+
+        <motion.ul 
+          animate = {modify}
+          initial = "hidden"
+          variants={
+            {
+              hidden: {opacity: 0, y: -100},
+              visible: {opacity: 1, y: 0},
+            }
+          }
+          transition={
+            {delay: 0.3}}
+        
+        className='gap-2 flex flex-col p-2 text-white'>
+                <motion.li 
+                animate = {modify}
+                initial = "hidden"
+                variants={
+                  {
+                    hidden: {opacity: 0, y: 100},
+                    visible: {opacity: 1, y: 0},
+                  }
+                }
+                transition={
+                  {delay: 0.7}}
+                
+                >➤ Integrated a temperature sensor, configuring it to collect data and ensuring accurate readings.</motion.li>
+        </motion.ul>
+
+        <motion.ul 
+          animate = {modify}
+          initial = "hidden"
+          variants={
+            {
+              hidden: {opacity: 0, y: -100},
+              visible: {opacity: 1, y: 0},
+            }
+          }
+          transition={
+            {delay: 0.3}}
+        
+        className='gap-2 flex flex-col p-2 text-white mb-10'>
+                <motion.li 
+                animate = {modify}
+                initial = "hidden"
+                variants={
+                  {
+                    hidden: {opacity: 0, y: 100},
+                    visible: {opacity: 1, y: 0},
+                  }
+                }
+                transition={
+                  {delay: 0.8}}
+                
+                >➤ Improved research skills by exploring monitoring solutions and optimizing system performance for the lab.</motion.li>
+        </motion.ul>      
 
         {/* Innovate 120 */}
         <div className='flex flex-row justify-between bg-white p-2 rounded-md items-center mb-5'>

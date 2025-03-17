@@ -5,6 +5,7 @@ import {BrowserRouter,Route,Routes} from 'react-router-dom'
 import AboutMe from './pages/AboutMe'
 import Experiences from './pages/Experiences'
 import Project from './pages/Project'
+import Resume from './pages/Resume'
 
 
 
@@ -21,6 +22,7 @@ const App = () => {
           <Route path='/about' element = {<AboutMe/>}/>
           <Route path='/experience' element = {<Experiences/>}/>
           <Route path='/projects' element = {<Project/>}/>
+          <Route path='/resume' element = {<Resume/>}/>
         </Routes>
       </BrowserRouter>
       
