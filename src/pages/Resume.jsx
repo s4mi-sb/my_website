@@ -1,7 +1,7 @@
 import {useEffect, useRef,useState} from 'react'
 import { motion,useInView,useAnimation} from "framer-motion"
 import { Document, Page, pdfjs} from 'react-pdf';
-import file from '../assets/Samuel_s_Resume.pdf';
+import file from '../assets/Updated_Resume (6).pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 
