@@ -1,5 +1,6 @@
 import profile from '../assets/innovate_120.jpeg'
 import arconicProfile from '../assets/arconic.jpg'
+import boeinglogo from '../assets/boeing.jpeg'
 import ARA_logo from '../assets/ARA_logo.png'
 import {useEffect, useRef} from 'react'
 import { motion,useInView,useAnimation} from "framer-motion"
@@ -33,23 +34,80 @@ export default function Experiences() {
       >
         <h1 className='text-3xl text-blue-200 text-center font-semibold underline underline-offset-8 mb-7'>Experience</h1>
 
-        {/* Arconic */}
-        <div className='flex flex-row justify-between bg-blue-400 p-2 rounded-md items-center mb-5'>
+
+        {/* Boeing research fellowship */}
+        <div className='flex flex-row justify-between bg-white p-2 rounded-md items-center mb-5'>
             <div>
-                <h1 className='font-semibold text-xl'>Electrical Engineering Intern</h1>
-                <p>May 2025 - August 2025</p>
+                <h1 className='font-semibold text-xl'>Boeing Research Fellow</h1>
+                <p>August 2025 - Present</p>
                 <motion.p
                 className='InnovateHeading'>
                   
-                    <motion.a whileHover={{fontWeight: 'bold'}} href="https://www.arconic.com/" target="_blank" rel="noopener noreferrer"> Arconic</motion.a>
+                    <motion.a whileHover={{fontWeight: 'bold'}} href="https://www.iastate.edu/" target="_blank" rel="noopener noreferrer"> Iowa State University</motion.a>
                 </motion.p>
                 
             </div>
 
             <div>
-                <img className='h-full object-cover size-20 border border-slate-400 rounded-lg' src={arconicProfile} alt="" />
+                <img className='h-full object-cover size-20 border border-slate-400 rounded-lg' src={boeinglogo} alt="" />
             </div>
         </div>
+        <motion.ul 
+          animate = {modify}
+          initial = "hidden"
+          variants={
+            {
+              hidden: {opacity: 0, y: -100},
+              visible: {opacity: 1, y: 0},
+            }
+          }
+          transition={
+            {delay: 0.3}}
+        
+        className='gap-2 flex flex-col p-2 text-white'>
+                <motion.li 
+                animate = {modify}
+                initial = "hidden"
+                variants={
+                  {
+                    hidden: {opacity: 0, y: 100},
+                    visible: {opacity: 1, y: 0},
+                  }
+                }
+                transition={
+                  {delay: 0.5}}
+                
+                >➤ Awarded a year-long Boeing-sponsored research fellowship with mentorship from industry engineers.</motion.li>
+        </motion.ul>
+
+        <motion.ul 
+          animate = {modify}
+          initial = "hidden"
+          variants={
+            {
+              hidden: {opacity: 0, y: -100},
+              visible: {opacity: 1, y: 0},
+            }
+          }
+          transition={
+            {delay: 0.3}}
+        
+        className='gap-2 flex flex-col p-2 text-white'>
+                <motion.li 
+                animate = {modify}
+                initial = "hidden"
+                variants={
+                  {
+                    hidden: {opacity: 0, y: 100},
+                    visible: {opacity: 1, y: 0},
+                  }
+                }
+                transition={
+                  {delay: 0.5}}
+
+                >➤ Conducting research under <motion.a whileHover={{fontWeight: 'bold'}} href="https://www.engineering.iastate.edu/people/profile/djchen/" target="_blank" className='font-bold text-blue-400' rel="noopener noreferrer">Dr. Degang Chen</motion.a>, working on the design of low-cost ultra-small DACs (Digital to Analog Converters).</motion.li>
+        </motion.ul>
+
         <motion.ul 
           animate = {modify}
           initial = "hidden"
@@ -75,9 +133,138 @@ export default function Experiences() {
                 transition={
                   {delay: 0.5}}
                 
-                >➤ Incoming Summer 2025 Electrical Engineering Intern.</motion.li>
+                >➤ Using Cadence Virtuoso for DAC circuit simulation, designing PCBs, and performing lab testing to validate research prototypes.</motion.li>
         </motion.ul>
+
+        {/* Arconic */}
+        <div className='flex flex-row justify-between bg-blue-400 p-2 rounded-md items-center mb-5'>
+            <div>
+                <h1 className='font-semibold text-xl'>Electrical Engineering Intern</h1>
+                <p>June 2025 - Present</p>
+                <motion.p
+                className='InnovateHeading'>
+                  
+                    <motion.a whileHover={{fontWeight: 'bold'}} href="https://www.arconic.com/" target="_blank" rel="noopener noreferrer"> Arconic</motion.a>
+                </motion.p>
                 
+            </div>
+
+            <div>
+                <img className='h-full object-cover size-20 border border-slate-400 rounded-lg' src={arconicProfile} alt="" />
+            </div>
+        </div>
+        <motion.ul 
+          animate = {modify}
+          initial = "hidden"
+          variants={
+            {
+              hidden: {opacity: 0, y: -100},
+              visible: {opacity: 1, y: 0},
+            }
+          }
+          transition={
+            {delay: 0.3}}
+        
+        className='gap-2 flex flex-col p-2 text-white'>
+                <motion.li 
+                animate = {modify}
+                initial = "hidden"
+                variants={
+                  {
+                    hidden: {opacity: 0, y: 100},
+                    visible: {opacity: 1, y: 0},
+                  }
+                }
+                transition={
+                  {delay: 0.5}}
+                
+                >➤ Programmed and updated Rockwell Logix 5000 PLCs and HMI systems to improve automation and process efficiency.</motion.li>
+        </motion.ul>
+
+        <motion.ul 
+          animate = {modify}
+          initial = "hidden"
+          variants={
+            {
+              hidden: {opacity: 0, y: -100},
+              visible: {opacity: 1, y: 0},
+            }
+          }
+          transition={
+            {delay: 0.3}}
+        
+        className='gap-2 flex flex-col p-2 text-white'>
+                <motion.li 
+                animate = {modify}
+                initial = "hidden"
+                variants={
+                  {
+                    hidden: {opacity: 0, y: 100},
+                    visible: {opacity: 1, y: 0},
+                  }
+                }
+                transition={
+                  {delay: 0.5}}
+                
+                >➤ Diagnosed and fixed a critical stitcher issue, eliminating downtime and preventing future failures.</motion.li>
+        </motion.ul>
+
+        <motion.ul 
+          animate = {modify}
+          initial = "hidden"
+          variants={
+            {
+              hidden: {opacity: 0, y: -100},
+              visible: {opacity: 1, y: 0},
+            }
+          }
+          transition={
+            {delay: 0.3}}
+        
+        className='gap-2 flex flex-col p-2 text-white'>
+                <motion.li 
+                animate = {modify}
+                initial = "hidden"
+                variants={
+                  {
+                    hidden: {opacity: 0, y: 100},
+                    visible: {opacity: 1, y: 0},
+                  }
+                }
+                transition={
+                  {delay: 0.5}}
+                
+                >➤ Integrated an AI tool for slip detection, improving accuracy and speed by 90%.</motion.li>
+        </motion.ul>
+
+        <motion.ul 
+          animate = {modify}
+          initial = "hidden"
+          variants={
+            {
+              hidden: {opacity: 0, y: -100},
+              visible: {opacity: 1, y: 0},
+            }
+          }
+          transition={
+            {delay: 0.3}}
+        
+        className='gap-2 flex flex-col p-2 text-white mb-10'>
+                <motion.li 
+                animate = {modify}
+                initial = "hidden"
+                variants={
+                  {
+                    hidden: {opacity: 0, y: 100},
+                    visible: {opacity: 1, y: 0},
+                  }
+                }
+                transition={
+                  {delay: 0.5}}
+                
+                >➤ Contributed remotely to ongoing process improvements and automation projects.</motion.li>
+        </motion.ul>
+    
                 
         {/* Undergrad Research */}
                 <div className='flex flex-row justify-between bg-slate-400 p-2 rounded-md items-center mb-5'>
@@ -149,7 +336,7 @@ export default function Experiences() {
                 transition={
                   {delay: 0.7}}
                 
-                >➤ Integrated a temperature sensor, configuring it to collect data and ensuring accurate readings.</motion.li>
+                >➤ Used LibreNMS and Graylog for real-time monitoring and historical data analysis across multiple platforms.</motion.li>
         </motion.ul>
 
         <motion.ul 
@@ -177,7 +364,7 @@ export default function Experiences() {
                 transition={
                   {delay: 0.8}}
                 
-                >➤ Improved research skills by exploring monitoring solutions and optimizing system performance for the lab.</motion.li>
+                >➤ Containerized the system with Docker on Linux to streamline deployment and improve scalability.</motion.li>
         </motion.ul>      
 
         {/* Innovate 120 */}

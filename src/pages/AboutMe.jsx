@@ -36,8 +36,7 @@ export default function AboutMe() {
             <div>
                 <p className='sm:text-center mb-7 text-white'>
                 Hi, there! I'm Samuel Barnabase, currently a sophmore studying  
-                Electrical Engineering at 🟨 <motion.span whileHover={{fontWeight: "bold"}}> <a className='text-red-400' href="https://www.iastate.edu/" target="_blank" rel="noopener noreferrer">Iowa State University</a></motion.span> 🟥 with a minor in Computer Science.
-                </p>
+                Electrical Engineering at 🟨 <motion.span whileHover={{fontWeight: "bold"}}> <a className='text-red-400' href="https://www.iastate.edu/" target="_blank" rel="noopener noreferrer">Iowa State University</a></motion.span> 🟥.</p>
             </div>
         
         <div className='flex flex-col sm:flex-row justify-between gap-5' >

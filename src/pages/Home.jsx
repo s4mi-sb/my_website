@@ -1,21 +1,22 @@
 import React from 'react'
 import {motion, useCycle} from 'framer-motion'
 import profile from '../assets/iowa-state-logo.png'
-import nodepic from '../assets/nodejs.png'
+import cadence from '../assets/cadence.jpg'
 import javapic from '../assets/java.png'
 import pypic from '../assets/python.png'
 import cpluspic from '../assets/c-.png'
 import cpic from '../assets/c.png'
-import mBD from '../assets/mongodb.jpg'
+import altium from '../assets/altium-designer.png'
+import KiCad from '../assets/KiCad.png'
+import LTspice from '../assets/LTspice.png'
+import matlab from '../assets/MATLAB-logo.png'
+import PLC from '../assets/PLC.png'
 import js from '../assets/js.png'
 import reactpic from '../assets/react.png'
 import awspic from '../assets/aws.png'
-import ijpic from '../assets/ij.png'
+
 import vscodepic from '../assets/vscode.png'
-import tailwindpic from '../assets/tailwind.webp'
-import expresspic from '../assets/express.png'
-import spring from '../assets/spring-boot.png'
-import nodeMailer from '../assets/nodeMailer.png'
+
 
 export default function Home() {
     const [x, cycleX] = useCycle(360, -360, 720, -720)
@@ -43,9 +44,33 @@ export default function Home() {
                     className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
                 >
                     <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-                        <li className='flex flex-col items-center'>
+                        {/* <li className='flex flex-col items-center'>
                             <img className='size-16' src={nodepic} alt="nodepic" />
                             <p className='text-white'>NodeJS</p>
+                        </li> */}
+                        <li className='flex flex-col items-center'>
+                            <img className='size-16' src={altium} alt="javapic" />
+                            <p className='text-white'>Altium Designer</p>
+                        </li>
+                        <li className='flex flex-col items-center'>
+                            <img className='size-16' src={KiCad} alt="javapic" />
+                            <p className='text-white'>KiCad</p>
+                        </li>
+                        <li className='flex flex-col items-center'>
+                            <img className='size-16' src={LTspice} alt="javapic" />
+                            <p className='text-white'>LTspice</p>
+                        </li>
+                        <li className='flex flex-col items-center'>
+                            <img className='size-16' src={matlab} alt="javapic" />
+                            <p className='text-white'>MatLab</p>
+                        </li>
+                        <li className='flex flex-col items-center'>
+                            <img className='size-16' src={cadence} alt="javapic" />
+                            <p className='text-white'>Cadence Virtuoso</p>
+                        </li>
+                        <li className='flex flex-col items-center'>
+                            <img className='size-16' src={PLC} alt="javapic" />
+                            <p className='text-white'>PLC programming</p>
                         </li>
                         <li className='flex flex-col items-center'>
                             <img className='size-16' src={javapic} alt="javapic" />
@@ -63,10 +88,10 @@ export default function Home() {
                             <img className='size-16 object-contain' src={cpic} alt="cpic" />
                             <p className='text-white'>C</p>
                         </li>
-                        <li className='flex flex-col items-center'>
+                        {/* <li className='flex flex-col items-center'>
                             <img className='size-16 object-contain' src={mBD} alt="mongoDBpic" />
                             <p className='text-white'>MongoDB</p>
-                        </li>
+                        </li> */}
                         <li className='flex flex-col items-center'>
                             <img className='size-16' src={js} alt="jspic" />
                             <p className='text-white'>JavaScript</p>
@@ -83,7 +108,7 @@ export default function Home() {
                             <img className='size-16 object-contain' src={vscodepic} alt="vspic" />
                             <p className='text-white'>VSCode</p>
                         </li>
-                        <li className='flex flex-col items-center'>
+                        {/* <li className='flex flex-col items-center'>
                             <img className='size-16 object-contain' src={ijpic} alt="ijpic" />
                             <p className='text-white'>Intellij</p>
                         </li>
@@ -102,12 +127,36 @@ export default function Home() {
                         <li className='flex flex-col items-center'>
                             <img className='size-16 object-contain' src={nodeMailer} alt="nodeMailpic" />
                             <p className='text-white'>NodeMailer</p>
-                        </li>
+                        </li> */}
                     </ul> 
                     <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
-                    <li className='flex flex-col items-center'>
+                    {/* <li className='flex flex-col items-center'>
                             <img className='size-16' src={nodepic} alt="nodepic" />
                             <p className='text-white'>NodeJS</p>
+                        </li> */}
+                        <li className='flex flex-col items-center'>
+                            <img className='size-16' src={altium} alt="javapic" />
+                            <p className='text-white'>Altium Designer</p>
+                        </li>
+                        <li className='flex flex-col items-center'>
+                            <img className='size-16' src={KiCad} alt="javapic" />
+                            <p className='text-white'>KiCad</p>
+                        </li>
+                        <li className='flex flex-col items-center'>
+                            <img className='size-16' src={LTspice} alt="javapic" />
+                            <p className='text-white'>LTspice</p>
+                        </li>
+                        <li className='flex flex-col items-center'>
+                            <img className='size-16' src={matlab} alt="javapic" />
+                            <p className='text-white'>MatLab</p>
+                        </li>
+                        <li className='flex flex-col items-center'>
+                            <img className='size-16' src={cadence} alt="javapic" />
+                            <p className='text-white'>Cadence Virtuoso</p>
+                        </li>
+                        <li className='flex flex-col items-center'>
+                            <img className='size-16' src={PLC} alt="javapic" />
+                            <p className='text-white'>PLC programming</p>
                         </li>
                         <li className='flex flex-col items-center'>
                             <img className='size-16' src={javapic} alt="javapic" />
@@ -125,10 +174,10 @@ export default function Home() {
                             <img className='size-16 object-contain' src={cpic} alt="cpic" />
                             <p className='text-white'>C</p>
                         </li>
-                        <li className='flex flex-col items-center'>
+                        {/* <li className='flex flex-col items-center'>
                             <img className='size-16 object-contain' src={mBD} alt="mongoDBpic" />
                             <p className='text-white'>MongoDB</p>
-                        </li>
+                        </li> */}
                         <li className='flex flex-col items-center'>
                             <img className='size-16' src={js} alt="jspic" />
                             <p className='text-white'>JavaScript</p>
@@ -145,7 +194,7 @@ export default function Home() {
                             <img className='size-16 object-contain' src={vscodepic} alt="vspic" />
                             <p className='text-white'>VSCode</p>
                         </li>
-                        <li className='flex flex-col items-center'>
+                        {/* <li className='flex flex-col items-center'>
                             <img className='size-16 object-contain' src={ijpic} alt="ijpic" />
                             <p className='text-white'>Intellij</p>
                         </li>
@@ -164,7 +213,7 @@ export default function Home() {
                         <li className='flex flex-col items-center'>
                             <img className='size-16 object-contain' src={nodeMailer} alt="nodeMailpic" />
                             <p className='text-white'>NodeMailer</p>
-                        </li>
+                        </li> */}
                     </ul>               
                 </div>
                
