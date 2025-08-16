@@ -103,7 +103,7 @@ export default function Experiences() {
                   }
                 }
                 transition={
-                  {delay: 0.5}}
+                  {delay: 0.6}}
 
                 >➤ Conducting research under <motion.a whileHover={{fontWeight: 'bold'}} href="https://www.engineering.iastate.edu/people/profile/djchen/" target="_blank" className='font-bold text-blue-400' rel="noopener noreferrer">Dr. Degang Chen</motion.a>, working on the design of low-cost ultra-small DACs (Digital to Analog Converters).</motion.li>
         </motion.ul>
@@ -131,7 +131,7 @@ export default function Experiences() {
                   }
                 }
                 transition={
-                  {delay: 0.5}}
+                  {delay: 0.7}}
                 
                 >➤ Using Cadence Virtuoso for DAC circuit simulation, designing PCBs, and performing lab testing to validate research prototypes.</motion.li>
         </motion.ul>
@@ -176,7 +176,7 @@ export default function Experiences() {
                   }
                 }
                 transition={
-                  {delay: 0.5}}
+                  {delay: 0.8}}
                 
                 >➤ Programmed and updated Rockwell Logix 5000 PLCs and HMI systems to improve automation and process efficiency.</motion.li>
         </motion.ul>
@@ -204,7 +204,7 @@ export default function Experiences() {
                   }
                 }
                 transition={
-                  {delay: 0.5}}
+                  {delay: 0.9}}
                 
                 >➤ Diagnosed and fixed a critical stitcher issue, eliminating downtime and preventing future failures.</motion.li>
         </motion.ul>
@@ -232,7 +232,7 @@ export default function Experiences() {
                   }
                 }
                 transition={
-                  {delay: 0.5}}
+                  {delay: 1.0}}
                 
                 >➤ Integrated an AI tool for slip detection, improving accuracy and speed by 90%.</motion.li>
         </motion.ul>
@@ -260,7 +260,7 @@ export default function Experiences() {
                   }
                 }
                 transition={
-                  {delay: 0.5}}
+                  {delay: 1.1}}
                 
                 >➤ Contributed remotely to ongoing process improvements and automation projects.</motion.li>
         </motion.ul>
